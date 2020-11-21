@@ -8,7 +8,7 @@ function SearchInput(props) {
       id='search-input'
       type='text'
       name='keywords'
-      placeholder='Введите данные'
+      placeholder='Введите название приюта'
       onChange={props.onChange}
       required
     />

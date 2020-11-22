@@ -1,13 +1,13 @@
 const mok = {
-  catDayCount: 10,
-  catDayTurnover: 10,
-  catDayPredict: 10,
-  catWeekCount: 10,
-  catWeekTurnover: 10,
-  catWeekPredict: 10,
-  catMonthCount: 10,
-  catMonthTurnover: 10,
-  catMonthPredict: 10,
+  catDayCount: 101,
+  catDayTurnover: 7358,
+  catDayPredict: 7998,
+  catWeekCount: 958,
+  catWeekTurnover: 4251,
+  catWeekPredict: 4721,
+  catMonthCount: 3249,
+  catMonthTurnover: 3249,
+  catMonthPredict: 3249,
 }
 
 export default mok;

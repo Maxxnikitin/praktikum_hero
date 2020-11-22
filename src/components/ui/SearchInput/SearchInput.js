@@ -3,7 +3,7 @@ import './SearchInput.css';
 
 function SearchInput(props) {
   return (
-    <input
+    <select
       className='search-input'
       id='search-input'
       type='text'
@@ -11,7 +11,9 @@ function SearchInput(props) {
       placeholder='Введите название приюта'
       onChange={props.onChange}
       required
-    />
+    >
+    {props.children}
+    </select>
   );
 }
 

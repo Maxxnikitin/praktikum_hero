@@ -3,7 +3,7 @@ import './SearchButton.css';
 
 function SearchButton(props) {
   return (
-    <button className='search-button' type='submit' onClick={props.onClick}>Искать</button>
+    <button className='search-button' type='button' onClick={props.onClick}>Искать</button>
   );
 }
 

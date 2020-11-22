@@ -17,7 +17,7 @@ function Result() {
           link='https://public.tableau.com/profile/dmitri1983#!/vizhome/TeddyFood_dashboard_example/Dashboard1?publish=yes'
           imgClass='card__img_size'
           title='Данные по продукту: КотоДень'
-          textCount='Рекомендуемая стоимость набора: '
+          textCount='Рекомендуемая цена набора: '
           textCountMoney={mok.catDayCount}
           textTurnover='Оборот за предыдущий месяц: '
           textTurnoverMoney={mok.catDayTurnover}
@@ -29,9 +29,9 @@ function Result() {
           src={catWeek}
           link='https://public.tableau.com/profile/dmitri1983#!/vizhome/TeddyFood_dashboard_example/Dashboard1?publish=yes'
           title='Данные по продукту: КотоНеделя'
-          textCount='Рекомендуемая стоимость набора: '
+          textCount='Рекомендуемая цена набора: '
           textCountMoney={mok.catWeekCount}
-          textTurnover='Оборотза предыдущий месяц: '
+          textTurnover='Оборот за предыдущий месяц: '
           textTurnoverMoney={mok.catWeekTurnover}
           textPredict='Прогнозируемый оборот: '
           textPredictMoney={mok.catWeekPredict}
@@ -41,7 +41,7 @@ function Result() {
           src={catMonth}
           link='https://public.tableau.com/profile/dmitri1983#!/vizhome/TeddyFood_dashboard_example/Dashboard1?publish=yes'
           title='Данные по продукту: КотоМесяц'
-          textCount='Рекомендуемая стоимость набора: '
+          textCount='Рекомендуемая цена набора: '
           textCountMoney={mok.catMonthCount}
           textTurnover='Оборот за предыдущий месяц: '
           textTurnoverMoney={mok.catMonthTurnover}

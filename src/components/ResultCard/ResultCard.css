@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  max-width: 400px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -13,11 +13,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .card__img {
-  width: 94%;
-  margin: 15px auto 11px;
+  width: 60%;
+  margin: 15px auto 21px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -50,6 +51,28 @@
   font-weight: 500;
 }
 
+.card__tooltip {
+  position: absolute;
+  top: 225px;
+  left: 20px;
+  padding: 14px 12px;
+  background-color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  border-radius: 10px;
+  background-color: darkgray  ;
+}
+
+.card__tooltip_active {
+  display: flex;
+}
+
 @media (max-width: 800px) {
   .card {
     max-width: 224px;
@@ -69,7 +92,7 @@
 
 @media (max-width: 767px) {
   .card {
-    max-width: 320px;
+    max-width:280px;
     max-height: 580px;
   }
 }

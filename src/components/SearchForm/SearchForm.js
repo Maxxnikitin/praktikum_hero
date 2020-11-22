@@ -15,8 +15,8 @@ function SearchForm(props) {
 
   return (
     <section className='search-form'>
-      <h1 className='search-form__title'>Узнать метрики онлайн?</h1>
-      <p className='search-form__text'>Введите название приюта и получите информацию о его обороте, а также рекомендацию по установлению стоимости.</p>
+      <h1 className='search-form__title'>Просмотр метрик</h1>
+      <p className='search-form__text'>Введите название приюта и получите информацию о его обороте, а также рекомендацию по установлению стоимости</p>
       <form className='search-form__form' name='search-form' noValidate>
         <SearchInput onChange={handleSearchInput} />
         <span className='form__input-error form__input-error_place_search' id='search-error'></span>

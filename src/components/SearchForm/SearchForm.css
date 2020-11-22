@@ -19,6 +19,7 @@
   color: #fff;
   margin: 0;
   margin-top: 160px;
+  margin-left: -50px;
   max-width: 545px;
 }
 
@@ -46,12 +47,12 @@
     font-size: 36px;
     line-height: 40px;
     max-width: 355px;
-    margin-left: -98px;
+    margin-left: -150px;
     margin-top: 104px;
   }
 
   .search-form__text {
-    max-width: 452px;
+    max-width: 450px;
     margin: 16px auto 48px;
   }
 

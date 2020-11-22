@@ -2,10 +2,32 @@ import React from "react";
 import "./ResultCard.css";
 
 function ResultCard(props) {
+  const [cardButtonMouseEnter, setCardButtonMouseEnter] = React.useState(false);
+
+  const tooltipClassList = `${
+    cardButtonMouseEnter
+      ? "card__tooltip card__tooltip_active"
+      : "card__tooltip "
+  }`;
+
+  function handleCardButtonMouseEnter() {
+    setCardButtonMouseEnter(true);
+  }
+
+  function handleCardButtonMouseLeave() {
+    setCardButtonMouseEnter(false);
+  }
 
   return (
     <article className="card">
-      <a className="card__link" href={props.link} target="_blank" rel="noreferrer">
+      <a
+        className="card__link"
+        href={props.link}
+        target="_blank"
+        rel="noreferrer"
+        onMouseEnter={handleCardButtonMouseEnter}
+        onMouseLeave={handleCardButtonMouseLeave}
+      >
         <img
           className='card__img'
           src={props.src}
@@ -23,6 +45,7 @@ function ResultCard(props) {
             <span className='card__text-count'>{props.textPredictMoney}</span>
           </p>
         </div>
+        <div className={tooltipClassList}>{props.tooltip}</div>
       </a>
     </article>
   );
